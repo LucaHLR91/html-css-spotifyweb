@@ -6,14 +6,63 @@
 
 /* common */
 .wrapper {
+    position: relative;
     width: 100%;
     height: 100vh;
 }
+
+.container {
+    width: 100%;
+}
+
+.container::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
 /* /common */
+
+/* side-menu */
+.side-menu {
+    float: left;
+    width: 200px;
+    height: calc(100vh - 100px);
+}
+/* /side-menu */
+
+/* centrale-interface */
+.central-interface {
+    float: left;
+    width: calc(100% - 200px);
+    height: calc(100vh - 100px);
+}
+/* /central-interface */
+
+/* footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+}
+/* /footer */
 
 /* debug */
 .debug .wrapper {
     background-color: aqua;
 }
 
+.debug .wrapper .side-menu {
+    background-color: blueviolet;
+}
+
+.debug .wrapper .central-interface {
+    background-color: chocolate;
+}
+
+.debug .wrapper footer {
+    background-color: cornflowerblue;
+}
 /* /debug */
