@@ -38,9 +38,26 @@
     width: 100%;
 }
 
-.side-menu #logo {
-    width: 80%;
+.side-menu #logo img {
+    width: 70%;
     padding: 10px;
+}
+
+.side-menu .side-nav {
+    height: 120px;
+    color: grey;
+    padding: 10px;
+    list-style-position: inside;
+    list-style: none;
+}
+
+.side-menu li {
+    margin-bottom: 5px;
+}
+
+.side-menu .side-nav img {
+    width: 15%;
+    vertical-align: middle;
 }
 
 .side-menu .account {
