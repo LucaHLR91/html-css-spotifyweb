@@ -29,12 +29,18 @@
     flex-direction: column;
     position: relative;
     float: left;
+    background-color: black;
     width: 200px;
     height: calc(100vh - 100px);
 }
 
 .side-menu div {
     width: 100%;
+}
+
+.side-menu #logo {
+    width: 80%;
+    padding: 10px;
 }
 
 .side-menu .account {
