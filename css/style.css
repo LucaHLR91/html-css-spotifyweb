@@ -3,3 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* common */
+.wrapper {
+    width: 100%;
+    height: 100vh;
+}
+/* /common */
+
+/* debug */
+.debug .wrapper {
+    background-color: aqua;
+}
+
+/* /debug */
