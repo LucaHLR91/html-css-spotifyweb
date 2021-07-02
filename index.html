@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>SpotifyWeb</title>
 </head>
@@ -14,54 +17,66 @@
             <!-- side menu -->
             <section class="side-menu">
                 <div id="logo">
-                    <img src="img/logo.svg" alt="logo spotify">
+                    <img id="logo-desktop" src="img/logo.svg" alt="logo spotify">
+                    <img id="logo-mobile" src="img/logo-small.svg" alt="logo mobile">
                 </div>
 
-                <nav class="side-nav">
-                    <ul>
-                        <li>
-                            <img src="img/home.svg" alt="home">
-                            <span>Home</span>
-                        </li>
-                        <li>
-                            <img src="img/search.svg" alt="ricerca">
-                            <span>Ricerca</span>
-                        </li>
-                        <li>
-                            <img src="img/libreria.svg" alt="libreria">
-                            <span>La tua libreira</span>
-                        </li>
-                    </ul>
-                </nav>
-
-                <div class="side-playlist">
-                    <div>
-                        <h4>Playlist</h4>
-                    </div>
-
-                    <div>
-                        <i class="fas fa-plus-square"></i>
-                        <span>Crea playlist</span>
-                    </div>
-
-                    <div>
+                <div class="main-nav">
+                    <nav class="side-nav">
                         <ul>
-                            <li>Nome playlist</li>
-                            <li>Nome playlist</li>
-                            <li>Nome playlist</li>
-                            <li>Nome playlist</li>
-                            <li>Nome playlist</li>
-                            <li>Nome playlist</li>
-                            <li>Nome playlist</li>
-                            <li>Nome playlist</li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/home.svg" alt="home">
+                                    <span>Home</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/search.svg" alt="ricerca">
+                                    <span>Ricerca</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/libreria.svg" alt="libreria">
+                                    <span>La tua libreira</span>
+                                </a> 
+                            </li>
                         </ul>
+                    </nav>
+
+                    <div class="side-playlist">
+                        <div>
+                            <h4>Playlist</h4>
+                        </div>
+
+                        <div>
+                            <a href="#">
+                                <i class="fas fa-plus-square"></i>
+                                <span>Crea playlist</span>
+                            </a>
+                        </div>
+
+                        <div>
+                            <ul>
+                                <li><a href="#">Nuova Playlist</a></li>
+                                <li><a href="#">Nuova Playlist</a></li>
+                                <li><a href="#">Nuova Playlist</a></li>
+                                <li><a href="#">Nuova Playlist</a></li>
+                                <li><a href="#">Nuova Playlist</a></li>
+                                <li><a href="#">Nuova Playlist</a></li>
+                                <li><a href="#">Nuova Playlist</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
+               </div>
                 
                 <div class="account">
                     <div class="account-top">
-                        <i class="far fa-arrow-alt-circle-down"></i>
-                        <span>Installa app</span>
+                        <a href="#">
+                            <i class="far fa-arrow-alt-circle-down"></i>
+                            <span>Installa app</span>
+                        </a>
                     </div>
 
                     <div class="account-bottom">
