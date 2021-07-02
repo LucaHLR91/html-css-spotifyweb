@@ -132,9 +132,27 @@ body {
 
 /* footer */
 footer {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     height: 100px;
     background-color: #282828;
+}
+
+.player {
+    display: flex;
+}
+
+.player-right {
+    flex-direction: row;
+}
+
+.player-controll {
+    flex-direction: column;
+}
+
+.player-left {
+    flex-direction: row;
 }
 /* /footer */
 
@@ -151,7 +169,7 @@ footer {
 /* /media-query */
 
 /* debug */
-.debug .wrapper {
+/* .debug .wrapper {
     background-color: aqua;
 }
 
@@ -163,7 +181,7 @@ footer {
     width: 100%;
     background-color: red;
     border: 1px solid black;
-}
+} */
 
 /* .debug .account {
     position: absolute;
@@ -178,4 +196,16 @@ footer {
 .debug .wrapper footer {
     background-color: cornflowerblue;
 }
+
+.debug footer .player-left,
+.debug footer .player-right {
+    width: 10%;
+    background-color: red;
+}
+
+.debug footer .player-controll {
+    width: 80%;
+    background-color: yellow;
+}
+
 /* /debug */
