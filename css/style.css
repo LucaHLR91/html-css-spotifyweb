@@ -146,15 +146,23 @@ i {
 
 .central-nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    width: 60%;
     padding: 20px;
     list-style: none;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .central-nav ul li {
     color: #7C7C7C;
-    padding: 0 20px;
+}
+
+.central-nav ul li:hover {
+    border-bottom: 1px solid limegreen;
+    color: white;
+
 }
 
 .central-box {
@@ -415,7 +423,7 @@ footer {
     text-align: center;
 } */
 
-.debug .central-nav {
+/* .debug .central-nav {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -435,7 +443,7 @@ footer {
 .debug .central-nav ul li {
     color: #7C7C7C;
     padding: 0 20px;
-}
+} */
 
 .debug .central-box {
     width: 100%;
