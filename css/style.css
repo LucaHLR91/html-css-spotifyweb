@@ -182,6 +182,61 @@ i {
     font-weight: bold;
 }
 
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.start {
+    justify-content: flex-start;
+}
+
+.card {
+    width: 15%;
+    margin-right: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h5 {
+    color: white;
+    font-weight: bold;
+}
+
+.card p {
+    color: #7C7C7C;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.album-cover {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.play-button {
+    position: absolute;
+    top :50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    display: none;
+    color: white;
+
+}
+
+.album-cover:hover + .play-button {
+    display: block;
+}
+
 /* /central-interface */
 
 /* footer */
@@ -457,7 +512,7 @@ footer {
     padding: 0 20px;
 } */
 
-.debug .central-box {
+/* .debug .central-box {
     width: 100%;
     height: 90%;
     overflow-y: auto;
@@ -465,13 +520,16 @@ footer {
 
 .debug .row {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    background-color: aqua;
+}
+
+.debug .start {
+    justify-content: flex-start;
 }
 
 .debug .card {
@@ -492,7 +550,7 @@ footer {
     color: #7C7C7C;
     font-size: 10px;
     font-weight: bold;
-}
+} */
 /* /debug */
 
 
