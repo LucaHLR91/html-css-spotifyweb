@@ -171,7 +171,6 @@ i {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 10%;
 }
 
 .central-nav ul {
@@ -179,7 +178,7 @@ i {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 40%;
+    width: 100%;
     padding: 20px;
     list-style: none;
     font-size: 15px;
@@ -226,7 +225,7 @@ i {
 
 .row {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
@@ -234,12 +233,8 @@ i {
     margin-bottom: 20px;
 }
 
-.start {
-    justify-content: flex-start;
-}
-
 .card {
-    width: 230px;
+    width: 15%;
     min-width: 150px;
     margin-right: 20px;
     padding-bottom: 10px;
@@ -355,6 +350,7 @@ footer {
 
 .box-right .volume-bar {
     display: flex;
+    position: relative;
     flex-wrap: nowrap;
     width: 40%;
 }
@@ -398,7 +394,7 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 300px;
+    width: 350px;
     padding: 10px 20px;
 }
 
@@ -492,6 +488,8 @@ footer {
         width: calc(100% - 50px);
     }
 }
+
+
 /* /media-query */
 
 /* debug */
