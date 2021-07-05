@@ -91,6 +91,8 @@ i {
 
 .side-menu .side-playlist {
     padding: 10px;
+    height: 50vh;
+    overflow: auto;
 }
 
 
@@ -174,9 +176,10 @@ i {
 
 .central-nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    width: 60%;
+    flex-wrap: wrap;
+    width: 40%;
     padding: 20px;
     list-style: none;
     font-size: 15px;
@@ -185,6 +188,7 @@ i {
 
 .central-nav ul li {
     color: #7C7C7C;
+    padding: 0 18px;
 }
 
 .central-nav ul li:hover {
@@ -235,7 +239,8 @@ i {
 }
 
 .card {
-    width: 15%;
+    width: 230px;
+    min-width: 150px;
     margin-right: 20px;
     padding-bottom: 10px;
     text-align: center;
@@ -311,19 +316,20 @@ footer {
 .player-right,
 .player-left {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    width: 400px;
+    width: 25%;
     padding: 0 16px;
 }
 
-#cover {
-    width: 20%;
+.player-left div {
+    padding: 0 10px;
 }
 
 #cover img {
-    width: 100%;
+    width: 50px;
+    height: 50px;
 }
 
 .player-left h6 {
@@ -348,11 +354,12 @@ footer {
 }
 
 .box-right .volume-bar {
+    display: flex;
+    flex-wrap: nowrap;
     width: 40%;
 }
 
 .box-right .bar-grey {
-    float: left;
     width: 20%;
     height: 4px;
     border-radius: 2px 0 0 2px;
@@ -364,7 +371,6 @@ footer {
 }
 
 .box-right .bar-dark {
-    float: left;
     width: 80%;
     height: 4px;
     border-radius: 0 2px 2px 0;
@@ -375,7 +381,7 @@ footer {
 .player-control {
     flex-direction: column;
     align-items: center;
-    width: calc(100% - 800px);
+    width: 50%;
 }
 
 .box-player {
@@ -392,9 +398,10 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 26%;
+    width: 300px;
     padding: 10px 20px;
 }
+
 .controls div i {
     min-width: 25px;
     color: white;
@@ -418,12 +425,13 @@ footer {
 }
 
 #music-bar {
+    display: flex;
+    flex-wrap: nowrap;
     width: 60%;
     padding: 10px 20px 0;
 }
 
 #music-bar .music-bar-grey {
-    float: left;
     width: 20%;
     height: 4px;
     background-color: #A3A3A3;
@@ -435,7 +443,6 @@ footer {
 }
 
 #music-bar .music-bar-dark {
-    float: left;
     width: 80%;
     height: 4px;
     background-color: #7c7c7c;
@@ -458,6 +465,27 @@ footer {
     .side-menu #logo #logo-mobile {
         display: block;
         width: 100%;
+    }
+
+    .side-menu .side-nav span {
+        display: none;
+    }
+
+    .side-menu .side-nav img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .side-menu .side-playlist {
+        display: none;
+    }
+
+    .account {
+        display: none;
+    }
+
+    .upgrade {
+        display: none;
     }
 
     .central-interface {
