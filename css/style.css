@@ -64,15 +64,21 @@ i {
 }
 
 .side-menu .side-nav {
-    padding: 10px;
     list-style-position: inside;
     list-style: none;
+}
+
+.side-nav ul {
+    padding: 10px;
+}
+
+.side-nav ul li:first-child {
+    border-left: 2px solid limegreen;
 }
 
 .side-menu li {
     margin-bottom: 10px;
 }
-
 
 .side-menu a {
     text-decoration: none;
@@ -188,10 +194,24 @@ i {
 .central-nav ul li {
     color: #7C7C7C;
     padding: 0 18px;
+    position: relative;
+}
+
+.central-nav ul li:first-of-type {
+    padding: 5px;
+}
+
+.green-bar {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    bottom: 0;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    background-color: limegreen;
 }
 
 .central-nav ul li:hover {
-    border-bottom: 2px solid limegreen;
     cursor: pointer;
     color: white;
 }
