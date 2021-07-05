@@ -1,0 +1,675 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* common */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: calc(100vh - 100px);
+    overflow-y: hidden;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+i {
+    color: #A3A3A3;
+}
+
+.title {
+    font-weight: bold;
+}
+
+
+/* /common */
+
+/* side-menu */
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    background-color: black;
+    width: 200px;
+    height: 100%;
+}
+
+.side-menu-top {
+    width: 100%;
+    height: calc(100% - 80px);
+    min-height: 480px;
+}
+
+.side-menu #logo img {
+    width: 70%;
+    padding: 10px;
+}
+
+.side-menu #logo #logo-mobile {
+    display: none;
+}
+
+.side-menu .side-nav {
+    list-style-position: inside;
+    list-style: none;
+}
+
+.side-nav ul {
+    padding: 10px;
+}
+
+.side-nav ul li:first-child {
+    border-left: 2px solid limegreen;
+}
+
+.side-menu li {
+    margin-bottom: 10px;
+}
+
+.side-menu a {
+    text-decoration: none;
+    color: #3C3C3C;
+    font-weight: bold;
+}
+
+.side-menu a:hover {
+    color: white;
+}
+
+.side-menu .side-nav img {
+    width: 15%;
+    vertical-align: middle;
+}
+
+.side-menu .side-playlist {
+    padding: 10px;
+    height: 50vh;
+    overflow: auto;
+}
+
+
+.side-playlist div {
+    margin-bottom: 10px;
+}
+
+.side-playlist ul {
+    height: 250px;
+    overflow-y: auto;
+}
+
+.side-playlist h4 {
+    color: white;
+}
+
+.side-playlist i {
+    font-size: 30px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.side-menu .account {
+    height: 80px;
+    padding: 10px;
+}
+
+.side-menu .account div {
+    margin-bottom: 10px;
+}
+
+.account-top {
+    border-bottom: 1px solid #3C3C3C;
+    padding-bottom: 10px;
+}
+
+.account-bottom h5,
+.account-bottom i {
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+}
+/* /side-menu */
+
+/* centrale-interface */
+.central-interface {
+    float: left;
+    width: calc(100% - 200px);
+    height: 100%;
+    background-color: #141922;
+}
+
+.upgrade {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-right: 20px;
+}
+
+.upgrade-text {
+    padding: 10px 40px;
+    border: 1px solid white;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.upgrade-text a {
+    text-decoration: none;
+    color: white;
+}
+
+.central-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.central-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+    list-style: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.central-nav ul li {
+    color: #7C7C7C;
+    padding: 0 18px;
+    position: relative;
+}
+
+.central-nav ul li:first-of-type {
+    padding: 5px;
+}
+
+.green-bar {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    bottom: 0;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    background-color: limegreen;
+}
+
+.central-nav ul li:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.central-box {
+    width: 100%;
+    height: 90%;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.central-box::-webkit-scrollbar {
+    width: 5px;
+}
+
+.central-box::-webkit-scrollbar-track {
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.5)
+}
+
+.central-box::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgba(48, 46, 46, 0.5);
+}
+
+.central-box section h2 {
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 15%;
+    min-width: 150px;
+    margin-right: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.album-cover.circle img {
+    border-radius: 50%;
+}
+
+.card h5 {
+    color: white;
+    font-weight: bold;
+}
+
+.card p {
+    color: #7C7C7C;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.album-cover {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.play-button {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top :0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+
+}
+
+.play-button i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.album-cover:hover .play-button {
+    display: block;
+    font-size: 70px;
+}
+
+/* /central-interface */
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #282828;
+}
+
+.player {
+    display: flex;
+}
+
+.player-right,
+.player-left {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 25%;
+    padding: 0 16px;
+}
+
+.player-left div {
+    padding: 0 10px;
+}
+
+#cover img {
+    width: 50px;
+    height: 50px;
+}
+
+.player-left h6 {
+    color: white;
+}
+
+.player-left p {
+    font-size: 10px;
+    color: #7C7C7C;
+}
+
+.box-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.box-right div {
+    padding: 0 10px;
+}
+
+.box-right .volume-bar {
+    display: flex;
+    position: relative;
+    flex-wrap: nowrap;
+    width: 40%;
+}
+
+.box-right .bar-grey {
+    width: 20%;
+    height: 4px;
+    border-radius: 2px 0 0 2px;
+    background-color: #A3A3A3;
+}
+
+.bar-grey:hover {
+    background-color: limegreen;
+}
+
+.box-right .bar-dark {
+    width: 80%;
+    height: 4px;
+    border-radius: 0 2px 2px 0;
+    background-color: #7C7C7C;
+
+}
+
+.player-control {
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.box-player {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 350px;
+    padding: 10px 20px;
+}
+
+.controls div i {
+    min-width: 25px;
+    color: white;
+}
+
+.controls div:nth-child(3) {
+    font-size: 30px;
+}
+
+.status {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+
+.status div {
+    font-size: 10px;
+    color: white;
+}
+
+#music-bar {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 60%;
+    padding: 10px 20px 0;
+}
+
+#music-bar .music-bar-grey {
+    width: 20%;
+    height: 4px;
+    background-color: #A3A3A3;
+    border-radius: 2px 0 0 2px;
+}
+
+#music-bar .music-bar-grey:hover {
+    background-color: limegreen;
+}
+
+#music-bar .music-bar-dark {
+    width: 80%;
+    height: 4px;
+    background-color: #7c7c7c;
+    border-radius: 0 2px 2px 0;
+}
+
+
+/* /footer */
+
+/* media-query */
+@media screen and (max-width: 600px) {
+    .side-menu {
+        width: 50px;
+    }
+
+    #logo-desktop {
+        display: none;
+    }
+
+    .side-menu #logo #logo-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .side-menu .side-nav span {
+        display: none;
+    }
+
+    .side-menu .side-nav img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .side-menu .side-playlist {
+        display: none;
+    }
+
+    .account {
+        display: none;
+    }
+
+    .upgrade {
+        display: none;
+    }
+
+    .central-interface {
+        width: calc(100% - 50px);
+    }
+}
+
+
+/* /media-query */
+
+/* debug */
+/* .debug .wrapper {
+    background-color: aqua;
+}
+
+.debug .wrapper .side-menu {
+    background-color: blueviolet;
+}
+
+.debug .wrapper .side-menu div {
+    width: 100%;
+    background-color: red;
+    border: 1px solid black;
+} */
+
+/* .debug .account {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+} */
+
+/* .debug .wrapper .central-interface {
+    background-color: chocolate;
+}
+
+.debug .wrapper footer {
+    background-color: cornflowerblue;
+}
+
+.debug footer .player-left,
+.debug footer .player-right {
+    width: 15%;
+    height: 100%;
+    background-color: red;
+}
+
+.debug footer .player-controll {
+    width: 70%;
+    height: 100%;
+    background-color: yellow;
+}
+
+.debug .player-left p {
+    font-size: 10px;
+} */
+
+/* .debug .box-right {
+    width: 100%;
+    height: 100px;
+    background-color: turquoise;
+}
+
+.debug .box-right div {
+    padding: 0 10px;
+}
+
+.debug .box-right .bar {
+    width: 100%;
+}
+
+.debug .box-right .bar-grey {
+    float: left;
+    width: 20%;
+    height: 4px;
+    border-radius: 0 0 0 30%;
+    background-color: #A3A3A3;
+}
+
+.debug .box-right .bar-dark {
+    float: left;
+    width: 80%;
+    height: 4px;
+    border-radius: 0 30% 0 0;
+    background-color: #7C7C7C;
+
+} */
+
+/* .debug .controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    height: 50%;
+    background-color: antiquewhite;
+} */
+
+/* .debug .status {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+} */
+
+/* .debug .central-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    background-color: red;
+}
+
+.debug .central-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    list-style: none;
+}
+
+.debug .central-nav ul li {
+    color: #7C7C7C;
+    padding: 0 20px;
+} */
+
+/* .debug .central-box {
+    width: 100%;
+    height: 90%;
+    overflow-y: auto;
+}
+
+.debug .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.debug .start {
+    justify-content: flex-start;
+}
+
+.debug .card {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.debug .card img {
+    width: 100%;
+}
+
+.debug .card h5 {
+    color: white;
+    font-weight: bold;
+}
+
+.debug .card p {
+    color: #7C7C7C;
+    font-size: 10px;
+    font-weight: bold;
+} */
+/* /debug */
+
+
