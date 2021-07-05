@@ -154,10 +154,14 @@ i {
 }
 
 .upgrade-text {
-    color: white;
     padding: 10px 40px;
     border: 1px solid white;
     border-radius: 20px 20px 20px 20px;
+}
+
+.upgrade-text a {
+    text-decoration: none;
+    color: white;
 }
 
 .central-nav {
@@ -309,6 +313,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     width: 400px;
     padding: 0 16px;
 }
@@ -391,6 +396,7 @@ footer {
     padding: 10px 20px;
 }
 .controls div i {
+    min-width: 25px;
     color: white;
 }
 
