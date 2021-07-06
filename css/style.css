@@ -492,7 +492,8 @@ footer {
         display: none;
     }
 
-    .account {
+    .account a span,
+    .account h5 {
         display: none;
     }
 
