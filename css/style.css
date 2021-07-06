@@ -547,6 +547,12 @@ footer {
 
 }
 
+@media screen and (max-height: 700px) {
+    .upgrade {
+        display: none;
+    }
+}
+
 
 /* /media-query */
 
