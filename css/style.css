@@ -46,12 +46,14 @@ i {
     background-color: black;
     width: 200px;
     height: 100%;
+    overflow: hidden;
 }
 
 .side-menu-top {
     width: 100%;
     height: calc(100% - 80px);
     min-height: 480px;
+    overflow: hidden;
 }
 
 .side-menu #logo img {
@@ -97,7 +99,7 @@ i {
 
 .side-menu .side-playlist {
     padding: 10px;
-    height: 50vh;
+    height: 50%;
     overflow: auto;
 }
 
@@ -106,8 +108,12 @@ i {
     margin-bottom: 10px;
 }
 
+.playlist-container {
+    height: 60%;
+}
+
 .side-playlist ul {
-    height: 250px;
+    height: 100%;
     overflow-y: auto;
 }
 
